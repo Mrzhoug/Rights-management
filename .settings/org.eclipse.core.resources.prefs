@@ -1,0 +1,9 @@
+#Thu Mar 17 12:41:22 CST 2016
+eclipse.preferences.version=1
+encoding//WebRoot/WEB-INF/jsp/index.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/manager/head.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/manager/left.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/manager/role/addResource.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/manager/user/addUser.jsp=UTF-8
+encoding//src/zgq/utils/JdbcUtils.java=UTF-8
+encoding//src/zgq/utils/WebUtils.java=UTF-8

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name></display-name>
+	<filter>
+		<filter-name>CharacterFilter</filter-name>
+		<filter-class>zgq.web.filter.CharacterFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>serverEncoding</param-name>
+			<param-value>ISO-8859-1</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>zgq.web.UI.IndexServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>ListEmployeeServlet</servlet-name>
+    <servlet-class>zgq.web.UI.ListEmployeeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddEmployeeServlet</servlet-name>
+    <servlet-class>zgq.web.UI.AddEmployeeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ManagerServlet</servlet-name>
+    <servlet-class>zgq.web.UI.ManagerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HeadServlet</servlet-name>
+    <servlet-class>zgq.web.UI.HeadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LeftServlet</servlet-name>
+    <servlet-class>zgq.web.UI.LeftServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BusinessService</servlet-name>
+    <servlet-class>zgq.service.BusinessService</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>zgq.web.controller.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RoleServlet</servlet-name>
+    <servlet-class>zgq.web.controller.RoleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ResourceServlet</servlet-name>
+    <servlet-class>zgq.web.controller.ResourceServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/servlet/IndexServlet</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListEmployeeServlet</servlet-name>
+    <url-pattern>/servlet/ListEmployeeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddEmployeeServlet</servlet-name>
+    <url-pattern>/servlet/AddEmployeeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManagerServlet</servlet-name>
+    <url-pattern>/servlet/ManagerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HeadServlet</servlet-name>
+    <url-pattern>/servlet/HeadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LeftServlet</servlet-name>
+    <url-pattern>/servlet/LeftServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BusinessService</servlet-name>
+    <url-pattern>/servlet/BusinessService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/servlet/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoleServlet</servlet-name>
+    <url-pattern>/servlet/RoleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResourceServlet</servlet-name>
+    <url-pattern>/servlet/ResourceServlet</url-pattern>
+  </servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>/servlet/IndexServlet</welcome-file>
+	</welcome-file-list>
+</web-app>
